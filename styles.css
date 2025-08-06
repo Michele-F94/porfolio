@@ -92,14 +92,6 @@ h2 {
   font-size: 2.2rem;
   color: #00cc88;
 }
-/* About */
-.about p {
-  max-width: 700px;
-  margin: auto;
-  font-size: 1.1rem;
-  text-align: center;
-  color: #ccc;
-}
 /* Skills */
 .skills-list {
   max-width: 700px;
@@ -123,32 +115,7 @@ h2 {
 .skills-list li:hover {
   transform: scale(1.1);
 }
-/* Projects */
-.projects-grid {
-  max-width: 900px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 25px;
-}
-.project-card {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 12px #00cc88aa;
-  transition: box-shadow 0.3s ease;
-}
-.project-card:hover {
-  box-shadow: 0 0 18px #00cc88cc;
-}
-.project-card h3 {
-  margin-bottom: 10px;
-  color: #00cc88;
-}
-.project-card p {
-  color: #ccc;
-  font-size: 1rem;
-}
+
 /* Contact */
 .contact form {
   max-width: 600px;
