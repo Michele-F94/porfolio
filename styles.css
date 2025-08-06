@@ -1,0 +1,253 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #eee;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+/* Header */
+.header {
+  background: #1f1f1f;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #00cc88;
+  cursor: default;
+  user-select: none;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+.nav ul li {
+  margin-left: 25px;
+}
+.nav ul li a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.nav ul li a:hover,
+.nav ul li a.active {
+  color: #00cc88;
+}
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #00cc88;
+  cursor: pointer;
+}
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+  text-align: center;
+  padding-top: 60px;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-content h1 span {
+  color: #00cc88;
+}
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #00cc88;
+}
+/* About */
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #ccc;
+}
+/* Skills */
+.skills-list {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+}
+.skills-list li {
+  background: #222;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #00cc88;
+  box-shadow: 0 0 10px #00cc88aa;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+.skills-list li:hover {
+  transform: scale(1.1);
+}
+/* Projects */
+.projects-grid {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+}
+.project-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #00cc88aa;
+  transition: box-shadow 0.3s ease;
+}
+.project-card:hover {
+  box-shadow: 0 0 18px #00cc88cc;
+}
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #00cc88;
+}
+.project-card p {
+  color: #ccc;
+  font-size: 1rem;
+}
+/* Contact */
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  resize: vertical;
+}
+.contact input:focus, .contact textarea:focus {
+  box-shadow: 0 0 8px #00cc88;
+  background: #222;
+  color: #eee;
+}
+.contact button {
+  background: #00cc88;
+  border: none;
+  color: #121212;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact button:hover {
+  background: #009955;
+}
+/* Footer */
+.footer {
+  background: #1f1f1f;
+  color: #555;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  user-select: none;
+}
+.home-card {
+  margin-top: 40px;
+  background: #222;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00cc88aa;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  gap: 25px;
+  color: #ccc;
+}
+
+.home-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 0 0 15px #00cc88cc;
+}
+
+.home-desc h3 {
+  margin-bottom: 10px;
+  color: #00cc88;
+}
+
+.home-desc p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    background: #121212;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 200px;
+    height: calc(100vh - 60px);
+    padding-top: 20px;
+    transition: right 0.3s ease;
+    box-shadow: -3px 0 8px rgba(0,0,0,0.8);
+  }
+  .nav ul.active {
+    right: 0;
+  }
+  .nav ul li {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}

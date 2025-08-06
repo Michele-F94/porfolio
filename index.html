@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Michele Fortunato - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="logo">Michele Fortunato</div>
+    <nav class="nav" id="nav-menu">
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </div>
+</header>
+
+<section id="home" class="section hero">
+  <div class="container hero-content">
+    <h1>Ciao, sono <span>Michele Fortunato</span></h1>
+    <p>Full Stack Web Developer</p>
+    <p>Nato a Manfredonia il 24 dicembre 1994</p>
+
+    <div class="home-card">
+      <img src="./img/Immagine WhatsApp 2025-07-28 ore 13.07.39_99f9e74e.jpg" width="100px" height="100px" alt="Foto di Michele Fortunato" />
+      <div class="home-desc">
+        <h3>Michele Fortunato</h3>
+        <p>Sono un Full Stack Web Developer con passione per la creazione di siti web moderni, efficienti e responsive. Amo imparare nuove tecnologie e migliorare continuamente le mie competenze.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>JavaScript (ES6+)</li>
+      <li>Python</li>
+      <li>Node.js</li>
+      <li>MySQL</li>
+      <li>Git & GitHub</li>
+      <li>CSS3</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 Michele Fortunato. Tutti i diritti sono riservati.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
